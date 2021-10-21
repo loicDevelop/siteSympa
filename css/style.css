@@ -1,12 +1,10 @@
-html {
-    background-color: #f0f0f0;
-}
-
 body{
-    background-color: #b4b4b4;
-    margin: 0px;    
+    background-color: #b9bfce;
+    margin:  0px;
 }
 
+
+/* Header div*/
 h1{
     color: white;
     font-weight: bold;
@@ -15,31 +13,32 @@ h1{
     letter-spacing: 1px;
     text-align: center;
     margin: auto;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px rgb(86, 122, 199), 0 0 30px rgb(4, 47, 71), 0 0 40px rgb(4, 47, 71), 0 0 55px rgb(3, 28, 49), 0 0 75px rgb(3, 28, 49), -6px -17px 14px rgba(192,206,203,0);
 }
 header{
-    background: linear-gradient( rgb(86, 122, 199) 0%,  rgb(4, 47, 71) 20%,rgb(3, 28, 49) 30%,rgb(19, 19, 19) 80%);    
+    background: linear-gradient( rgb(86, 122, 199) 0%,  rgb(4, 47, 71) 20%,rgb(3, 28, 49) 30%,rgb(0, 0, 0) 65%);    
 }
 
 header div{
     display: flex;
+    flex-direction: row;
+    margin-left: 6%;
+    margin-right: 6%;
     justify-content: center;
-    align-items: center;
-    margin-left: 50px;
-    margin-right: 50px;
+    align-items: baseline;
+    text-align: center;
+    align-self: center;
 }
 
-footer{
-    background: linear-gradient(rgb(19, 19, 19) 0%, rgb(3, 28, 49) 20%, rgb(4, 47, 71) 35%,rgb(86, 122, 199) 70%);       
-}
-
+/* navigation barre*/
 nav{
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(19, 19, 19);
+    background-color: rgb(0, 0, 0);
     display: flex;  
-    justify-content: center;
+    justify-content:center;
     align-items: center;
     width: 100%;
     font-family: sans-serif;
@@ -53,6 +52,224 @@ li a {
     text-decoration: none;
 }
 
-li a:hover:not(.active) {
-    background-color: #102b5c;
+li a:hover {
+    color:rgb(134, 157, 207);
+    text-shadow: 0 0 5px rgb(102, 147, 230), 0 0 10px rgb(54, 104, 212), 0 0 15px rgb(54, 104, 212), 0 0 20px rgb(86, 122, 199), 0 0 30px rgb(21, 115, 165), 0 0 40px rgb(1, 61, 94), 0 0 55px rgb(6, 39, 71), 0 0 75px rgba(0, 0, 0, 0.705), -6px -17px 14px rgba(3, 3, 3, 0.445);
+}
+
+
+/*Actualité en première de page*/
+#actualite{
+    background-color: rgba(3, 30, 44, 0.918);
+    color: white; 
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 1%;
+    border-style: double;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-top: 6px double rgb(78, 105, 165);
+    border-radius: 40px 40px 40px 40px;
+}
+#actualite h2{
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px rgb(86, 122, 199), 0 0 30px rgb(4, 47, 71), 0 0 40px rgb(4, 47, 71), 0 0 55px rgb(3, 28, 49), 0 0 75px rgb(3, 28, 49), -6px -17px 14px rgba(192,206,203,0);
+    text-align: center;
+}
+
+/* Footer div*/
+footer{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgb(19, 19, 19) 0%, rgb(3, 28, 49) 20%, rgb(4, 47, 71) 35%,rgb(86, 122, 199) 70%);       
+}
+
+footer section{
+    width: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+}
+
+#zoe {
+    margin-top: 1%;
+    max-width: 50px;
+    height: auto;
+    animation-duration: 14s;
+    animation-name: myAnimeZoe;
+    animation-iteration-count: infinite;
+  }
+  @keyframes myAnimeZoe {
+    from {
+      margin-left: 0%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 90%;
+      width: 100%;
+    }
+  }
+
+footer section a{
+    margin-top: 22%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+footer #footerText *{
+    color: black;
+    font-weight: bold;
+    margin-top: 3%;
+    margin-bottom: 6%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/* Section du body*/
+
+body section{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-right: 3%;    
+    margin-left: 3%;
+    align-items: left;
+}
+
+body section section{
+    flex-grow:2;
+    display: flex;
+    flex-direction:column;
+    align-items: left;
+    justify-content: flex-start;
+
+}
+
+body section section div{
+    display: flex;
+    flex-direction:column;
+    align-items: left;
+}
+
+body section section h2{
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px rgb(86, 122, 199), 0 -10px 20px rgb(4, 47, 71), 0 -18px 40px rgb(3, 28, 49), 10px -12px 8px rgba(108,136,115,0);
+    font-weight: bold;
+    margin: 0%;
+    margin-bottom: 2px;
+    margin-top: 3%;
+}
+
+body section section p{
+    max-width: 80%;
+    text-align: justify;
+    margin: 2%;
+    margin-top: 0px;
+    letter-spacing: -1px;
+}
+
+body section section a{
+    max-width: 80%;
+    text-align: justify;
+    margin: 2%;
+    margin-top: 0px;
+    letter-spacing: -1px;
+}
+
+body section section div img {
+    max-width: 80%; 
+    max-height: 80%;
+    margin-left: 5%;
+    margin-right: 20%;
+    text-align: center;
+}
+
+
+/* Section des pubs*/ 
+body aside{
+    border-radius: 40px 40px 40px 40px;
+    background-color: rgba(3, 30, 44, 0.918);
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-self:center;
+    flex-grow:1;
+    align-self: start;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    border-style: double;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-top: 6px double rgb(78, 105, 165);
+    border-radius: 40px 40px 40px 40px;
+    width: 60%;
+    align-content: center;
+    align-items: center;
+}
+body aside div {
+    align-items: center;
+    text-align: center
+}
+
+body aside div img{
+    max-width: 90%; 
+    max-height: 90%;
+    margin-right: 2%;    
+    margin-left: 2%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    align-items: center;
+    text-align: center;
+    height: auto;
+}
+
+body iframe {
+    margin-left : 10%;
+    width: 60%;
+    height: auto;
+}
+
+/* Session Streamer*/
+
+body section section div ul{
+    color: purple;
+    font-weight: bold;
+    list-style-position: inside;
+}
+
+body section section div ul li{
+    inset-block:inherit;
+    vertical-align: middle;
+}
+
+body section section div ul.streamer li{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+body section section div ul.streamer li img{
+    height: 30px;
+    width: 30px;
+    margin-right: 5px;
+}
+body section section div ul.streamer li a{
+    size: 30px;
+    color: black;
+}
+body section section div ul.streamer li a:hover {
+    text-shadow: none;
 }
