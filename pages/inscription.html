@@ -6,6 +6,7 @@
     <link href="../css/style.css" rel="stylesheet" media="all" type="text/css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="../scripts/scriptBase.js" async></script>
     <title>Wiki TFT</title>
 </head>
 
@@ -43,29 +44,18 @@
     <section>
 
         <section>
-            <div>               
-                <h2>Nous rejoidre sur discord</h2>
+            <div>
+                <h2>Nous rejoindre sur discord</h2>
                 <p> Veuillez remplir vos coodonnées pour vous recruté</p>
-            </div>
-        
-            <div class="formulaire">
-                <img src="../pictures/discord.png" height="60">
-                <form>
-                    <label>Prénom
-                        <input type="text" name="prenom">
-                    </label>
-                    <label>Mail
-                        <input type="email" name="email">
-                    </label>
-                    <label>Pseudo in game
-                        <input type="text" name="pseudo">
-                    </label>
-                    <label> Date de naissance
-                        <input type="date" name="dateNaissance">
-                    </label>
-                    </label> Ligue
-                        <form>
+                <div>
+                    <form id="formulaire">
+                        <div>
+                            <input type="text" name="prenom" placeholder="Prénom">
+                            <input type="email" name="email" placeholder="e-mail">
+                            <input type="text" name="pseudo" placeholder="Pseudo en jeu">
+                            <input type="date" name="dateNaissance" placeholder="Date de naissance">
                             <SELECT name="ligue" size="1">
+                                <OPTION selected disabled hidden>Ligue
                                 <OPTION>Fer
                                 <OPTION>Bronze
                                 <OPTION>Silver
@@ -76,21 +66,26 @@
                                 <OPTION>Grand Maitre
                                 <OPTION>Challenger
                             </SELECT>
-                        </form>
-                        </label>
-        
+                            <button id="validerInscription" type="button" onclick="boom()" value="okokokokok">
+                                <img src="../pictures/discord.png" height="18px">
+                                <p> Envoyer</p>
+                            </button>
+                        </div>
+                </div>
+
                 </form>
-                <button type="submit">Valider ma demande</button>
+            </div>
+            </form>
             </div>
         </section>
 
         <aside>
             <div>
-                <img src="../pictures/pub3.jpg" alt="première pub"  />
+                <img src="../pictures/pub3.jpg" alt="première pub" />
             </div>
 
             <div>
-                <img src="../pictures/pub4.gif" alt="deuxième pub"  />
+                <img src="../pictures/pub4.gif" alt="deuxième pub" />
             </div>
         </aside>
 
