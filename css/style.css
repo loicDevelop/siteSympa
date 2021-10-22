@@ -174,14 +174,14 @@ body aside{
     border-radius: 40px 40px 40px 40px;
     max-width: 560px;
     align-content: center;
-    align-items: stretch;
+    align-items: center;
 }
 /*___________________*/
 
 body section section div{
     display: flex;
     flex-direction:column;
-    align-items: left;
+    align-items:left;
 }
 
 body section section h2{
@@ -216,14 +216,54 @@ body section section div img {
     text-align: center;
 }
 
-
-/* Section des pubs*/ 
-body aside div {
-    align-items: center;
-    text-align: center
+body iframe {
+    margin-left : 10%;
+    width: 60%;
+    height: auto;
 }
 
-body aside div img{
+/* Section des pubs*/ 
+
+body section aside h2{
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px rgb(86, 122, 199), 0 -10px 20px rgb(4, 47, 71), 0 -18px 40px rgb(3, 28, 49), 10px -12px 8px rgba(108,136,115,0);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin: 0%;
+    margin-bottom: 2px;
+    margin-top: 1%;
+}
+
+#memeRoulette{
+    background-color: rgba(86, 122, 199, 0) ;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: stretch;
+    align-self: auto;
+
+}
+
+#memeRoulette div{
+    background-color: rgba(86, 122, 199, 0) ;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-self:baseline;
+    max-height: 90%;
+    max-width: 90%;
+    align-self: center;
+}
+
+body aside div {
+    align-items: center;
+    max-height: 80%;
+    max-width: 80%;
+}
+
+body aside div img {
     max-width: 80%; 
     max-height: 80%;
     margin-right: 2%;    
@@ -234,10 +274,15 @@ body aside div img{
     text-align: center;
     height: auto;
 }
-
-body iframe {
-    margin-left : 10%;
-    width: 60%;
+#memeRoulette  div img{
+    max-width: 150px; 
+    max-height: 80%;
+    margin-right: 2%;    
+    margin-left: 2%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    align-items: center;
+    text-align: center;
     height: auto;
 }
 
@@ -339,4 +384,45 @@ input, select {
     border-top: 2px double rgb(78, 105, 165);
 }
 
+/* Calculatrice*/
+#calculatrice{
+    border: 1%;
+    margin: 1%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    justify-content:stretch;
+    align-self: auto;
+}
 
+#calculatrice div{
+    width: 100%;
+    height: 100%;
+    border-left: 1%;
+    border-right: 1%;
+    display: flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+    align-items: baseline;
+    align-self: auto;
+    font-weight: bold;
+    color: white;
+}
+
+#calculatrice div div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-around;
+    align-items: stretch;
+    align-self: auto;
+}
+
+#calculatrice div div input{
+    width: 60%;
+    height: 60%;
+    padding: 3%;
+    margin: 3%;
+}

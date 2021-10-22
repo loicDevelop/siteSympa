@@ -59,9 +59,54 @@
         </section>
         
         <aside>
+            <h2> 4 Peoples on line </h2>
+            <button id="memeRoulette" type="button" onclick="memeMove()">
+                <div>
+                    <img id="meme1" src="../pictures/ex-cat.gif">
+                    <img id="meme2" src="../pictures/ex-hamster.gif">
+                </div>
+                <div>
+                    <img id="meme3" src="../pictures/ex-monkey.gif">
+                    <img id="meme4" src="../pictures/ex-yeux.gif">
+                </div>
+            </button>
+
             <div>
                 <img src="../pictures/pub5.gif" alt="première pub" height="300" />
             </div>
+
+                     
+            <h2> Calculatrice </h2>
+            <div id="calculatrice">
+                <div>
+                    <div>
+                    <p id="res">result</p>
+                    </div>
+                    <div>
+                        <input type="button" value="7" onClick="calcul('7')">
+                        <input type="button" value="8" onClick="calcul('8')">
+                        <input type="button" value="9" onClick="calcul('9')">
+                        <input type="button" value="/" onClick="calcul('/')">
+                    </div>
+                    <div>
+                        <input type="button" value="4" onClick="calcul('4')">
+                        <input type="button" value="5" onClick="calcul('5')">
+                        <input type="button" value="6" onClick="calcul('6')">
+                        <input type="button" value="*" onClick="calcul('*')">
+                    </div>
+                    <div>
+                        <input type="button" value="1" onClick="calcul('1')">
+                        <input type="button" value="2" onClick="calcul('2')">
+                        <input type="button" value="3" onClick="calcul('3')">
+                        <input type="button" value="-" onClick="calcul('-')">
+                    </div>
+                    <div>
+                        <input type="button" value="0" onClick="calcul('0')">
+                        <input type="button" value="res" onClick="calcul('res')">
+                        <input type="button" value="=" onClick="calcul('=')">
+                        <input type="button" value="+" onClick="calcul('+')">
+                    </div>
+                </div>
         </aside>
 
     </section>
